@@ -6,12 +6,30 @@
 	objectVersion = 46;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		6DD8042519306626006CEA4E /* Mogenerator */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6DD8042619306626006CEA4E /* Build configuration list for PBXAggregateTarget "Mogenerator" */;
+			buildPhases = (
+				6DD80429193066A5006CEA4E /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Mogenerator;
+			productName = Mogenerator;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		6DD804111930553E006CEA4E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD804101930553E006CEA4E /* XCTest.framework */; };
 		6DD804121930553E006CEA4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FA817CE409C00F1CD8D /* Foundation.framework */; };
 		6DD804131930553E006CEA4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FA617CE409C00F1CD8D /* UIKit.framework */; };
 		6DD804191930553E006CEA4E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6DD804171930553E006CEA4E /* InfoPlist.strings */; };
 		6DD8041B1930553E006CEA4E /* MAGCoreDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8041A1930553E006CEA4E /* MAGCoreDataTests.m */; };
+		6DD8043419307E88006CEA4E /* TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8043019307E88006CEA4E /* TestEntity.m */; };
+		6DD8043519307E88006CEA4E /* _TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8043319307E88006CEA4E /* _TestEntity.m */; };
+		6DD8043619308035006CEA4E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DD80422193064BF006CEA4E /* Model.xcdatamodeld */; };
+		6DD80439193083EF006CEA4E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FCA17CE412100F1CD8D /* CoreData.framework */; };
 		BDD82FA717CE409C00F1CD8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FA617CE409C00F1CD8D /* UIKit.framework */; };
 		BDD82FA917CE409C00F1CD8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FA817CE409C00F1CD8D /* Foundation.framework */; };
 		BDD82FAB17CE409C00F1CD8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FAA17CE409C00F1CD8D /* CoreGraphics.framework */; };
@@ -46,6 +64,11 @@
 		6DD804181930553E006CEA4E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6DD8041A1930553E006CEA4E /* MAGCoreDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MAGCoreDataTests.m; sourceTree = "<group>"; };
 		6DD8041C1930553E006CEA4E /* MAGCoreDataTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MAGCoreDataTests-Prefix.pch"; sourceTree = "<group>"; };
+		6DD80423193064BF006CEA4E /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		6DD8042F19307E88006CEA4E /* TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestEntity.h; sourceTree = "<group>"; };
+		6DD8043019307E88006CEA4E /* TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity.m; sourceTree = "<group>"; };
+		6DD8043219307E88006CEA4E /* _TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TestEntity.h; sourceTree = "<group>"; };
+		6DD8043319307E88006CEA4E /* _TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TestEntity.m; sourceTree = "<group>"; };
 		BDD82FA317CE409C00F1CD8D /* MAGCoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAGCoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD82FA617CE409C00F1CD8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDD82FA817CE409C00F1CD8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -77,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD80439193083EF006CEA4E /* CoreData.framework in Frameworks */,
 				6DD804111930553E006CEA4E /* XCTest.framework in Frameworks */,
 				6DD804131930553E006CEA4E /* UIKit.framework in Frameworks */,
 				6DD804121930553E006CEA4E /* Foundation.framework in Frameworks */,
@@ -100,7 +124,9 @@
 		6DD804141930553E006CEA4E /* MAGCoreDataTests */ = {
 			isa = PBXGroup;
 			children = (
+				6DD8042A19307D5F006CEA4E /* DataModel */,
 				6DD8041A1930553E006CEA4E /* MAGCoreDataTests.m */,
+				6DD80422193064BF006CEA4E /* Model.xcdatamodeld */,
 				6DD804151930553E006CEA4E /* Supporting Files */,
 			);
 			path = MAGCoreDataTests;
@@ -114,6 +140,35 @@
 				6DD8041C1930553E006CEA4E /* MAGCoreDataTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6DD8042A19307D5F006CEA4E /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				6DD8042E19307E88006CEA4E /* HumanModel */,
+				6DD8043119307E88006CEA4E /* MachineModel */,
+			);
+			name = DataModel;
+			sourceTree = "<group>";
+		};
+		6DD8042E19307E88006CEA4E /* HumanModel */ = {
+			isa = PBXGroup;
+			children = (
+				6DD8042F19307E88006CEA4E /* TestEntity.h */,
+				6DD8043019307E88006CEA4E /* TestEntity.m */,
+			);
+			name = HumanModel;
+			path = DataModel/HumanModel;
+			sourceTree = "<group>";
+		};
+		6DD8043119307E88006CEA4E /* MachineModel */ = {
+			isa = PBXGroup;
+			children = (
+				6DD8043219307E88006CEA4E /* _TestEntity.h */,
+				6DD8043319307E88006CEA4E /* _TestEntity.m */,
+			);
+			name = MachineModel;
+			path = DataModel/MachineModel;
 			sourceTree = "<group>";
 		};
 		BDD82F9A17CE409C00F1CD8D = {
@@ -272,6 +327,7 @@
 			targets = (
 				BDD82FA217CE409C00F1CD8D /* MAGCoreDataExample */,
 				6DD8040E1930553E006CEA4E /* MAGCoreDataTests */,
+				6DD8042519306626006CEA4E /* Mogenerator */,
 			);
 		};
 /* End PBXProject section */
@@ -298,11 +354,30 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DD80429193066A5006CEA4E /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "mogenerator -m \"${PROJECT_DIR}/MAGCoreDataTests/Model.xcdatamodeld/Model.xcdatamodel\" -M \"${PROJECT_DIR}/MAGCoreDataTests/DataModel/MachineModel\" -H \"${PROJECT_DIR}/MAGCoreDataTests/DataModel/HumanModel\" --template-var arc=true";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		6DD8040B1930553E006CEA4E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DD8043619308035006CEA4E /* Model.xcdatamodeld in Sources */,
+				6DD8043519307E88006CEA4E /* _TestEntity.m in Sources */,
+				6DD8043419307E88006CEA4E /* TestEntity.m in Sources */,
 				6DD8041B1930553E006CEA4E /* MAGCoreDataTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +487,20 @@
 			};
 			name = Release;
 		};
+		6DD8042719306626006CEA4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6DD8042819306626006CEA4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		BDD82FBE17CE409C00F1CD8D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -475,6 +564,7 @@
 				GCC_PREFIX_HEADER = "MAGCoreDataExample/MAGCoreDataExample-Prefix.pch";
 				INFOPLIST_FILE = "MAGCoreDataExample/MAGCoreDataExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/MAGCoreDataTests/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -486,6 +576,7 @@
 				GCC_PREFIX_HEADER = "MAGCoreDataExample/MAGCoreDataExample-Prefix.pch";
 				INFOPLIST_FILE = "MAGCoreDataExample/MAGCoreDataExample-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/MAGCoreDataTests/**";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -498,6 +589,14 @@
 			buildConfigurations = (
 				6DD8041F1930553E006CEA4E /* Debug */,
 				6DD804201930553E006CEA4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		6DD8042619306626006CEA4E /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6DD8042719306626006CEA4E /* Debug */,
+				6DD8042819306626006CEA4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
@@ -520,6 +619,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6DD80422193064BF006CEA4E /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6DD80423193064BF006CEA4E /* Model.xcdatamodel */,
+			);
+			currentVersion = 6DD80423193064BF006CEA4E /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BDD82F9B17CE409C00F1CD8D /* Project object */;
 }
