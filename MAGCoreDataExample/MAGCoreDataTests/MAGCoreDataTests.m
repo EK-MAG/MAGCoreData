@@ -38,16 +38,15 @@
 }
 
 - (void)testSingeltonDidCreate {
-    XCTAssertEqualObjects([MAGCoreData instance], [MAGCoreData instance], @"singelton didn't created");
+    expect([MAGCoreData instance]).to.beIdenticalTo([MAGCoreData instance]);
 }
 
 - (void)testOnlyOneInstanceSingeltonDidCreate {
-    XCTAssertEqualObjects([MAGCoreData instance], [MAGCoreData new], @"can be crated more than one instance singelton");
+    expect([MAGCoreData instance]).to.beIdenticalTo([MAGCoreData new]);
 }
 
 - (void)testPrepeareCoreData {
-    NSError *error = [MAGCoreData prepareCoreData];
-    XCTAssertNil(error, @"core data didn't prepeared");
+    expect([MAGCoreData prepareCoreData]).to.beNil();
 }
 
 - (void)testCanCreateTestEntity {
@@ -55,7 +54,7 @@
 
     TestEntity *object = [TestEntity create];
 
-    XCTAssertNotNil(object, @"mananged object didn't created");
+    expect(object).toNot.beNil();
 
     [self clearTestEntity];
 }
@@ -68,7 +67,7 @@
 
     TestEntity *object = [TestEntity getOrCreateObjectForPrimaryKey:[testString copy]];
 
-    XCTAssertTrue([object.name isEqualToString:[testString copy]]);
+    expect(object.name).to.equal([testString copy]);
 
     [self clearTestEntity];
 }
@@ -85,7 +84,7 @@
 
     object = [TestEntity getOrCreateObjectForPrimaryKey:[testString copy]];
 
-    XCTAssertNil(object.name);
+    expect(object.name).to.beNil();
 
     [self clearTestEntity];
 }
