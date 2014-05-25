@@ -21,6 +21,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		6DB185141931FF2E0094EE15 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DB185131931FF2E0094EE15 /* libPods.a */; };
 		6DD804111930553E006CEA4E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DD804101930553E006CEA4E /* XCTest.framework */; };
 		6DD804121930553E006CEA4E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FA817CE409C00F1CD8D /* Foundation.framework */; };
 		6DD804131930553E006CEA4E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FA617CE409C00F1CD8D /* UIKit.framework */; };
@@ -30,6 +31,7 @@
 		6DD8043519307E88006CEA4E /* _TestEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD8043319307E88006CEA4E /* _TestEntity.m */; };
 		6DD8043619308035006CEA4E /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6DD80422193064BF006CEA4E /* Model.xcdatamodeld */; };
 		6DD80439193083EF006CEA4E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FCA17CE412100F1CD8D /* CoreData.framework */; };
+		859CE85CA35846CE96D6B044 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3F68E1A63A34D398805F0DF /* libPods.a */; };
 		BDD82FA717CE409C00F1CD8D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FA617CE409C00F1CD8D /* UIKit.framework */; };
 		BDD82FA917CE409C00F1CD8D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FA817CE409C00F1CD8D /* Foundation.framework */; };
 		BDD82FAB17CE409C00F1CD8D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDD82FAA17CE409C00F1CD8D /* CoreGraphics.framework */; };
@@ -58,6 +60,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		31F629392B3943B0A0474FB7 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		6DB185131931FF2E0094EE15 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		6DD8040F1930553E006CEA4E /* MAGCoreDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MAGCoreDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD804101930553E006CEA4E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6DD804161930553E006CEA4E /* MAGCoreDataTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MAGCoreDataTests-Info.plist"; sourceTree = "<group>"; };
@@ -69,6 +73,7 @@
 		6DD8043019307E88006CEA4E /* TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestEntity.m; sourceTree = "<group>"; };
 		6DD8043219307E88006CEA4E /* _TestEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _TestEntity.h; sourceTree = "<group>"; };
 		6DD8043319307E88006CEA4E /* _TestEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = _TestEntity.m; sourceTree = "<group>"; };
+		A3F68E1A63A34D398805F0DF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD82FA317CE409C00F1CD8D /* MAGCoreDataExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MAGCoreDataExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDD82FA617CE409C00F1CD8D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BDD82FA817CE409C00F1CD8D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6DB185141931FF2E0094EE15 /* libPods.a in Frameworks */,
 				6DD80439193083EF006CEA4E /* CoreData.framework in Frameworks */,
 				6DD804111930553E006CEA4E /* XCTest.framework in Frameworks */,
 				6DD804131930553E006CEA4E /* UIKit.framework in Frameworks */,
@@ -115,6 +121,7 @@
 				BDD82FA717CE409C00F1CD8D /* UIKit.framework in Frameworks */,
 				BDD82FA917CE409C00F1CD8D /* Foundation.framework in Frameworks */,
 				BDD82FAB17CE409C00F1CD8D /* CoreGraphics.framework in Frameworks */,
+				859CE85CA35846CE96D6B044 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,6 +185,7 @@
 				6DD804141930553E006CEA4E /* MAGCoreDataTests */,
 				BDD82FA517CE409C00F1CD8D /* Frameworks */,
 				BDD82FA417CE409C00F1CD8D /* Products */,
+				31F629392B3943B0A0474FB7 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -193,11 +201,13 @@
 		BDD82FA517CE409C00F1CD8D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6DB185131931FF2E0094EE15 /* libPods.a */,
 				BDD82FCA17CE412100F1CD8D /* CoreData.framework */,
 				BDD82FA617CE409C00F1CD8D /* UIKit.framework */,
 				BDD82FA817CE409C00F1CD8D /* Foundation.framework */,
 				BDD82FAA17CE409C00F1CD8D /* CoreGraphics.framework */,
 				6DD804101930553E006CEA4E /* XCTest.framework */,
+				A3F68E1A63A34D398805F0DF /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -270,6 +280,8 @@
 				6DD8040B1930553E006CEA4E /* Sources */,
 				6DD8040C1930553E006CEA4E /* Frameworks */,
 				6DD8040D1930553E006CEA4E /* Resources */,
+				6DB185151931FF6D0094EE15 /* Copy Pods Resources */,
+				6DB185161931FFFC0094EE15 /* Check Pods Manifest.lock */,
 			);
 			buildRules = (
 			);
@@ -285,9 +297,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BDD82FC017CE409C00F1CD8D /* Build configuration list for PBXNativeTarget "MAGCoreDataExample" */;
 			buildPhases = (
+				C7DF134D14F7466DA683C1A8 /* Check Pods Manifest.lock */,
 				BDD82F9F17CE409C00F1CD8D /* Sources */,
 				BDD82FA017CE409C00F1CD8D /* Frameworks */,
 				BDD82FA117CE409C00F1CD8D /* Resources */,
+				B81F81ABE9FD445292E7FCF6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -355,6 +369,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6DB185151931FF6D0094EE15 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"";
+			showEnvVarsInLog = 0;
+		};
+		6DB185161931FFFC0094EE15 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\ncat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\nexit 1\nfi";
+			showEnvVarsInLog = 0;
+		};
 		6DD80429193066A5006CEA4E /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -367,6 +411,36 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "mogenerator -m \"${PROJECT_DIR}/MAGCoreDataTests/Model.xcdatamodeld/Model.xcdatamodel\" -M \"${PROJECT_DIR}/MAGCoreDataTests/DataModel/MachineModel\" -H \"${PROJECT_DIR}/MAGCoreDataTests/DataModel/HumanModel\" --template-var arc=true";
+		};
+		B81F81ABE9FD445292E7FCF6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C7DF134D14F7466DA683C1A8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -444,16 +518,29 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
+					"COCOAPODS=1",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"${PODS_ROOT}/Headers/Expecta\"",
+					"\"${PODS_ROOT}/Headers\"",
+				);
 				INFOPLIST_FILE = "MAGCoreDataTests/MAGCoreDataTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -474,15 +561,28 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MAGCoreDataTests/MAGCoreDataTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "COCOAPODS=1";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"\"${PODS_ROOT}/Headers/Expecta\"",
+					"\"${PODS_ROOT}/Headers\"",
+				);
 				INFOPLIST_FILE = "MAGCoreDataTests/MAGCoreDataTests-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PODS_ROOT = "${SRCROOT}/Pods";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
+				USER_HEADER_SEARCH_PATHS = "";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
@@ -559,10 +659,18 @@
 		};
 		BDD82FC117CE409C00F1CD8D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31F629392B3943B0A0474FB7 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MAGCoreDataExample/MAGCoreDataExample-Prefix.pch";
 				INFOPLIST_FILE = "MAGCoreDataExample/MAGCoreDataExample-Info.plist";
+				"OTHER_CFLAGS[arch=*]" = (
+					"$(inherited)",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers\"",
+					"-isystem",
+					"\"${PODS_ROOT}/Headers/Expecta\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				USER_HEADER_SEARCH_PATHS = "${PROJECT_DIR}/MAGCoreDataTests/**";
 				WRAPPER_EXTENSION = app;
@@ -571,6 +679,7 @@
 		};
 		BDD82FC217CE409C00F1CD8D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31F629392B3943B0A0474FB7 /* Pods.xcconfig */;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MAGCoreDataExample/MAGCoreDataExample-Prefix.pch";
@@ -591,6 +700,7 @@
 				6DD804201930553E006CEA4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6DD8042619306626006CEA4E /* Build configuration list for PBXAggregateTarget "Mogenerator" */ = {
 			isa = XCConfigurationList;
@@ -599,6 +709,7 @@
 				6DD8042819306626006CEA4E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BDD82F9E17CE409C00F1CD8D /* Build configuration list for PBXProject "MAGCoreDataExample" */ = {
 			isa = XCConfigurationList;

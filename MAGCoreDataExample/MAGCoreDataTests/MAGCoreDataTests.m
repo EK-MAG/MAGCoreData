@@ -6,6 +6,9 @@
 //  Copyright (c) 2014 MadAppGang. All rights reserved.
 //
 
+#define EXP_SHORTHAND
+#import "Expecta.h"
+
 #import <XCTest/XCTest.h>
 #import <CoreData/CoreData.h>
 #import "MAGCoreData.h"
@@ -31,7 +34,7 @@
 }
 
 - (void)testSingeltonCanBeCreate {
-    XCTAssertNotNil([MAGCoreData instance], @"instance didn't created");
+    expect([MAGCoreData instance]).toNot.beNil();
 }
 
 - (void)testSingeltonDidCreate {
