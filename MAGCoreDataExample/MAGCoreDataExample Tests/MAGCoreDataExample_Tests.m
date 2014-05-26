@@ -40,7 +40,16 @@
 
 - (void)testIfContextExist {
 //    XCTAssertNotNil([MAGCoreData context], @"context is nil");/////?????????
+    [MAGCoreData instance];
+    [MAGCoreData prepareCoreData];
+    XCTAssertNotNil([MAGCoreData context]);
 }
+
+
+- (void)testIfSingletonOnlyOne {
+    XCTAssertEqual([MAGCoreData instance], [MAGCoreData instance]);
+}
+
 
 - (void)testPrepeareCoreData {
     XCTAssertNil([MAGCoreData prepareCoreData], @"core data is not prepeared");
@@ -53,12 +62,18 @@
 
 
 - (void)testIfEntityCreated {
-    [MAGCoreData deleteStorage];
+//    [MAGCoreData instance];
     [MAGCoreData prepareCoreData];
-    Entity *entity = [Entity create];
+    Entity *entity = [Entity create];//????
     XCTAssertNotNil(entity);
     [Entity deleteAll];
-    
+}
+
+
+- (void)testContextIsClear {
+    [MAGCoreData prepareCoreData];
+    [MAGCoreData deleteAll];
+    XCTAssertNil([MAGCoreData context]);
 }
 
 /*- (void)testSingeltonCanBeCreate {
