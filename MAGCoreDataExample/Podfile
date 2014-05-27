@@ -1,1 +1,9 @@
-pod "Expecta"
+target :MAGCoreDataExample do
+
+end
+
+target :'MAGCoreDataExample Tests' do
+	platform :ios, '7.0'
+	pod 'OCMock', '~> 2.2.4'
+	pod 'Expecta', '~> 0.2.4'
+end

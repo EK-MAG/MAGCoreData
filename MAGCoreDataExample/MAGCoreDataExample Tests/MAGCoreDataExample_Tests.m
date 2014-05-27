@@ -14,7 +14,7 @@
 #import "MAGCoreData.h"
 
 #import "Entity.h"
-//#import "Expecta.h"
+#import "Expecta.h"
 
 @interface MAGCoreDataExample_Tests : XCTestCase
 
@@ -76,9 +76,14 @@
     XCTAssertNil([MAGCoreData context]);
 }
 
-/*- (void)testSingeltonCanBeCreate {
-    NSLog(@"%@", NSStringFromSelector(_cmd));
-    expect([MAGCoreData instance]).toNot.beNil();
-}*/
 
+- (void)testSingeltonCanBeCreate {
+    expect([MAGCoreData instance]).toNot.beNil();
+}
+
+
+- (void)testIfSingletonCreatedOnce {
+    expect([MAGCoreData instance]).to.equal([MAGCoreData instance]);
+
+}
 @end
